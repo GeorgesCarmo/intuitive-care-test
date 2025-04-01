@@ -72,19 +72,28 @@ INTUITIVE-CARE-TEST
    ```
 5. Execute a aplicação WebScraper:
    ```sh
-   mvn exec:java -Dexec.mainClass="com.georges.intuitive_care_test.WebScraper"
+   java -cp target/classes:$(cat classpath.txt) com.georges.intuitive_care_test.WebScraper
+   ```
+   se estiver no Windows use:
+   ```sh
+   java -cp target/classes;$(type classpath.txt) com.georges.intuitive_care_test.WebScraper
    ```
 6. Execute a aplicação DataTransform:
    ```sh
-   mvn exec:java -Dexec.mainClass="com.georges.intuitive_care_test.DataTransform"
+   java -cp target/classes:$(cat classpath.txt) com.georges.intuitive_care_test.DataTransform
    ```
-
+   se estiver no Windows use:
+   ```sh
+   java -cp target/classes;$(type classpath.txt) com.georges.intuitive_care_test.DataTransform
+   ```
 ## Banco de dados
-As querys slq estão na pasta database na raiz do projeto. Observe que o docker-compose possui um volumes para que os arquivos csv sejam copiados para o container docker. No meu caso o diretório **/home/georges/Downloads** foi copiado para **/dados** no container.
+As querys slq estão na pasta database na raiz do projeto. Observe que o docker-compose possui um volumes para que os arquivos csv previamente baixados sejam copiados para o container docker. No meu caso o diretório **/home/georges/Downloads** foi copiado para **/dados** no container.
 
-- Para confirmar se os arquivos foram copiados, execute o comando:
+- Para confirmar se os arquivos foram copiados, execute os comandos:
   ```sh
   docker exec -it intuitive-care-test-db-1 bash
+  ```
+  ```sh
   ls /dados
   ```
 Em seguida:
