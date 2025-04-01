@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element;
 public class WebScraper {
     public static void main(String[] args) {
         String url = "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos";
-        String downloadDir = "/home/georges/eclipse-workspace/intuitive-care-test/downloads/"; // Altere para o diretório desejado
+        String downloadDir = "./downloads/"; // Altere para o diretório desejado
         String zipFileName = "anexos.zip";
 
         try {

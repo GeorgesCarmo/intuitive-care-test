@@ -56,7 +56,7 @@ INTUITIVE-CARE-TEST
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/GeorgesCarmo/intuitive-care-teste.git
+   git clone https://github.com/GeorgesCarmo/intuitive-care-test.git
    ```
 2. Acesse a pasta do projeto:
    ```sh

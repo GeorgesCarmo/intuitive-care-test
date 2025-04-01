@@ -14,7 +14,7 @@ import com.opencsv.CSVWriter;
 
 public class DataTransform {
     public static void main(String[] args) {
-        String pdfFilePath = "/home/georges/eclipse-workspace/intuitive-care-test/downloads/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf"; // Altere para o caminho do seu arquivo PDF
+        String pdfFilePath = "./downloads/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf"; // Altere para o caminho do seu arquivo PDF
         String csvFilePath = "Rol_de_Procedimentos.csv";
         String zipFilePath = "Teste_Georges.zip";
 
