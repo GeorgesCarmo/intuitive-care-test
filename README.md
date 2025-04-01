@@ -60,7 +60,7 @@ INTUITIVE-CARE-TEST
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd intuitive-care-teste
+   cd intuitive-care-test
    ```
 3. Inicie o banco de dados PostgreSQL com Docker Compose:
    ```sh
